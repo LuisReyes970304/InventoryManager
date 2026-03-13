@@ -31,7 +31,7 @@ class InventoryManager(Inventory):
     def show_total(self):
         for i in range(len(self.product_list)):
             info = self.product_list[i]
-            print(f"\nProduct {i+1}:\n")
+            print(f"\nProduct {i + 1}:\n")
             print("Product name: ...............:",info["name"])
             print("Product price: ..............:",info["price"])
             print("Product cuantity: ...........:",info["amount"])
