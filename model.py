@@ -1,6 +1,7 @@
 #This is the main model for objects!
 
 #This is the model that create the product dict
+from time import sleep
 class Inventory:
     def __init__(self):
         self.name = input("Provide the product name: ")
@@ -17,7 +18,6 @@ class Inventory:
             "subtotal": self.subtotal
         }
     
-
 class InventoryManager(Inventory):
     def __init__(self):
         super().__init__()
@@ -26,18 +26,18 @@ class InventoryManager(Inventory):
     def add_to_list(self):
         product_dict = self.create_dict()
         self.product_list.append(product_dict)
-        return "\nProduct data added to the database list\n"
+        return self.product_list
     
     def show_total(self):
         for i in range(len(self.product_list)):
             info = self.product_list[i]
-            print("Product number:", (i + 1), "\n")
+            print(f"\nProduct {i+1}:\n")
             print("Product name: ...............:",info["name"])
             print("Product price: ..............:",info["price"])
-            print("Product cuantity: ..............:",info["amount"])
+            print("Product cuantity: ...........:",info["amount"])
             print("Product subtotal: ...........:",info["subtotal"])
-
-
-test = InventoryManager()
-test.add_to_list()
-test.show_total()
+            print(".............................................................")
+        total = sum(product["subtotal"] for product in self.product_list)
+        for i in f"\nTotal: {total}":
+            print(i, end="", flush=True)
+            sleep(0.01)
