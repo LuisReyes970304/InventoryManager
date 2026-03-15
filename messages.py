@@ -1,5 +1,8 @@
 from time import sleep
 
+
+#This is just a couple of message str to styles the main function and validation error.
+
 welcome_message = """
 
 ******************** Welcome to InventoryManger ********************
@@ -56,7 +59,7 @@ invalid_price = """
 
 """
 
-bay_message = """
+bye_message = """
 ****************************************************************
 
          Thank you for using InventoryManager. Goodbye!
@@ -91,5 +94,10 @@ def invalid_ValueError_message_int():
 
 def invalid_ValueError_message_float():
     for i in value_error_float:
+        print(i, end="", flush=True)
+        sleep(0.01)
+
+def bye_message_function():
+    for i in bay_message:
         print(i, end="", flush=True)
         sleep(0.01)

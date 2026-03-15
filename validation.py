@@ -1,5 +1,6 @@
 from messages import invalid_price_message, invalid_amount_message, invalid_name_message, invalid_ValueError_message_int, invalid_ValueError_message_float
 
+#This is the name validation, it makes sure the product name is not an empty str 
 def name_validator():
     validator = True
     while validator:
@@ -11,7 +12,7 @@ def name_validator():
             validator = False
     return name
 
-    
+#This is the price validator, it makes sure the price is a float and a valid number    
 def price_validator(name):
     validator = True
     while validator:
@@ -26,7 +27,7 @@ def price_validator(name):
             invalid_ValueError_message_float()
     return price
 
-
+#This function makes sure the amount of product is a valid number and a integer
 def amount_validator(name):
     validator = True
     while validator:
