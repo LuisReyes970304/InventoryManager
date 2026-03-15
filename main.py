@@ -1,56 +1,32 @@
 #This is the main file in which run all the program. 
+from inventory import InventoryManager, Product
+from messages import welcome_message_fun
+from validation import name_validator, price_validator, amount_validator   
 from time import sleep
-from model import InventoryManager
 
-welcome_message = """
 
-******************** Welcome to InventoryManger ********************
+welcome_message_fun()
 
-********** This is a simple program that works in console **********
+name = name_validator()
+price = price_validator(name)
+amount = amount_validator(name)
 
-********************** Les't start  with this **********************
-
-"""
-
-invalid_message = """
-       **********************************
-         Invalid information provided.
-       **********************************
-        Please try again:
-
-"""
-for i in welcome_message:
-    print(i, end="", flush=True)
-    sleep(0.01)
-
-validator = True
-while validator:
-    try:
-        app = InventoryManager()
-        validator = False
-    except ValueError:
-        for i in invalid_message:
-            print(i, end="", flush=True)
-            sleep(0.01)
-            continue
-
+product = Product(name, price, amount)
+app = InventoryManager()
 
 active = True
 while active:
-    app.add_to_list()
-    continue_message = input("\nDo you want to add another product? (yes/no): ")
-    if continue_message.lower() != "yes":
-        active = False    
-    else:
-        try:
-            app.name = input("Provide the product name: ")
-            app.price = float(input(f"Provide the {app.name}'s price: "))
-            app.amount = int(input(f"Provide the {app.name}'s amount: "))
-            app.subtotal = app.price * app.amount
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
-            continue
+    app.add_to_list(product)
+    another_product = input("\nDo you want to add another product? (yes/not): ").lower()
+    if another_product == "yes":
+        name = name_validator()
+        price = price_validator(name)
+        amount = amount_validator(name)
+        product = Product(name, price, amount)
+    elif another_product != "yes":
+        active = False
 
 app.show_total()
     
-print("\nThank you for using InventoryManager. Goodbye!")
+
+
