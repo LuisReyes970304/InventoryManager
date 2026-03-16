@@ -23,8 +23,9 @@ while active:
     #The product is added to the list
     app.add_to_list(product)
     #Ask for another productt to be added
-    another_product = input("\nDo you want to add another product? (yes/not): \n").lower()
+    another_product = input("\nDo you want to add another product? (yes/not): ").lower()
     if another_product == "yes":
+        print("")
         #If yes, is needed to declare the inputs again so the former information product is not added one more time to the list, but the new one yes.
         name = name_validator()
         price = price_validator(name)
