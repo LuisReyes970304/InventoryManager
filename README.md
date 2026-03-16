@@ -33,8 +33,7 @@
 <body>
 
 ---
----
----
+
 <h2>Author</h2>
 
 Luis Reyes Caro  
