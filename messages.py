@@ -98,6 +98,6 @@ def invalid_ValueError_message_float():
         sleep(0.01)
 
 def bye_message_function():
-    for i in bay_message:
+    for i in bye_message:
         print(i, end="", flush=True)
         sleep(0.01)
