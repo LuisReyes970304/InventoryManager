@@ -5,34 +5,29 @@
         margin: 0;
         padding: 0;
     }
-
     fieldset {
         border-radius: 10px;
         border: 1px solid rgb(10, 240, 100);
         color: rgb(108, 209, 78);
         background-color: rgba(10, 10, 10, 0.78);
     }
-
     span {
         color: rgb(20, 200, 150);
         font-size: 18px;
         font-weight: 1000;
     }
-
     header {
         display: flex;
         justify-content: center;
         width: 100%;
         border-radius: 10px;
     }
-
     h1 {
         display: flex;
         margin: 10px;
         width: 100%;
         justify-content: center;
     }
-
 </style>
 </head>
 
