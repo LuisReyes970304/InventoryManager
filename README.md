@@ -6,7 +6,7 @@
 
 - <p>Lest say that you have a business and you are buying some couple of products for your stock</p>
 
-- <p><span>InventoryManager</span> Help you out creating a list of all the products name, quantity, price and even more, a total spent taking into account all the different classes of products.</p>
+- <p><span style="color📗">InventoryManager</span> Help you out creating a list of all the products name, quantity, price and even more, a total spent taking into account all the different classes of products.</p>
 </fieldset>
 
 <h2>How it works?</h2>
