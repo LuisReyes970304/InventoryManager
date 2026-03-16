@@ -1,5 +1,5 @@
-<head>
     <style>
+        
     body {
         box-sizing: border-box;
         margin: 0;
@@ -29,8 +29,6 @@
         justify-content: center;
     }
     </style>
-</head>
-
 
 <body>
 <header><h1>InventoryManager</h1></header>
