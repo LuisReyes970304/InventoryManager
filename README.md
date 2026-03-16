@@ -1,9 +1,15 @@
 <style>
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
     fieldset {
         border-radius: 10px;
         border: 1px solid rgb(10, 240, 100);
         color: rgb(108, 209, 78);
-        background-color: black;
+        background-color: rgba(10, 10, 10, 0.78);
     }
 
     span {
@@ -11,15 +17,32 @@
         font-size: 18px;
         font-weight: 1000;
     }
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        display: flex;
+        margin: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
 </style>
+<body>
+<header><h1>InventoryManager</h1></header>
 
-<h1>InventoryManager</h1>
+<fieldset>
+<p>This is a simple app that works in Console and help you out creating a product Inventory </p>
 
-<p>This is a simple app that works in Console and help you out creating a product Inventory</p>
+- <p>Lest say that you have a business and you are buying some couple of products for your stock</p>
 
-- Lest say that you have a business and you are buying some couple of products for your stock
-
-- **InventoryManager** help you out crating a list of all the products name, quantity, price and even more, a total spent taking into account all the different classes of products.
+- <p><span>InventoryManager</span> Help you out creating a list of all the products name, quantity, price and even more, a total spent taking into account all the different classes of products.</p>
+</fieldset>
 
 <h2>How it works?</h2>
 <p>InventoryManager is splited in four python files every one of them with an important function in the console application: </p>
@@ -38,3 +61,16 @@
 
 </fieldset>
 
+<h2>Language</h2>
+<p>The languange used is Python splited in four files that interact by themselve across the application </p>
+
+![Python](https://skillicons.dev/icons?i=python) 
+<body>
+
+---
+---
+---
+<h2>Author</h2>
+
+Luis Reyes Caro  
+Software Developer in Training

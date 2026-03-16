@@ -20,14 +20,21 @@ class InventoryManager:
     #In this function there is printed every single product, name, price amount and total per product
     def show_total(self):
         for product in self.product_list:
-            print("Product name: ...............:",product.name)
-            print("Product price: ..............:",product.price)
-            print("Product cuantity: ...........:",product.amount)
-            print("Product subtotal: ...........:",product.subtotal)
-            print(".............................................................")
+            output = f"""
+Product name: ...............: {product.name}
+Product price: ..............: {product.price}
+Product cuantity: ...........: {product.amount}
+Product subtotal: ...........: {product.subtotal}
+.............................................................
+"""
+            for i in output:
+                print(i, end="", flush=True)
+                sleep(0.01)
+
         #Also it prints the total amount spent in all of the products.
         total = sum(product.subtotal for product in self.product_list)
 
         for i in f"\nTotal: {total}\n":
             print(i, end="", flush=True)
             sleep(0.01)
+        
