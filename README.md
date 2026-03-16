@@ -42,6 +42,7 @@
 
 <h3>Chartflow</h3>
 
+![alt text](chartflow.png)
 ---
 <h2>Author</h2>
 
