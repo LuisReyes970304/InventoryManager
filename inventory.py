@@ -21,10 +21,10 @@ class InventoryManager:
     def show_total(self):
         for product in self.product_list:
             output = f"""
-Product name: ...............: {product.name}
-Product price: ..............: {product.price}
-Product cuantity: ...........: {product.amount}
-Product subtotal: ...........: {product.subtotal}
+    Product name: ...............: {product.name}
+    Product price: ..............: {product.price}
+    Product cuantity: ...........: {product.amount}
+    Product subtotal: ...........: {product.subtotal}
 .............................................................
 """
             for i in output:
