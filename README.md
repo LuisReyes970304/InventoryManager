@@ -9,8 +9,12 @@
 - <p><span style="color📗">InventoryManager</span> Help you out creating a list of all the products name, quantity, price and even more, a total spent taking into account all the different classes of products.</p>
 </fieldset>
 
+--- 
+
 <h2>How it works?</h2>
 <p>InventoryManager is splited in four python files every one of them with an important function in the console application: </p>
+
+---
 
 <fieldset>
 
@@ -25,6 +29,8 @@
 - <h3>main.py</h3> <p>The main.py file is the place in which we put all the functions together in a loop and in this way the system runs until the client decide to stop it an get the final receipt with the inventory</p>
 
 </fieldset>
+
+---
 
 <h2>Language</h2>
 <p>The languange used is Python splited in four files that interact by themselve across the application </p>
